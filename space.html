@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space</title>
+</head>
+
+<body>
+    <script>
+        function get_age(age) {
+            let diff = Date.now() - age.getTime();
+            let age_dt = new Date(diff);
+            return Math.abs(age_dt.getUTCFullYear() - 1970);
+        }
+        console.log(get_age(new Date(2016, 08, 06))); //year/month/day
+    </script>
+</body>
+
+</html>
